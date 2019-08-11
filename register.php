@@ -35,6 +35,9 @@ h1   {color: blue;}
             $result = mysqli_query($conn, $sql);
             //return message
             if($result){
+                session_start();
+                $_SESSION['sess_user'] = $user;
+                echo "Hello " .$user."! Welcome to my world!<br/><br/>";
                 echo "Your Account Created successfully";
             }
             else
