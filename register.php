@@ -3,12 +3,36 @@
 <head>
 <title>User Registration</title>
 <style>
+.register{
+    width:350px;
+    margin:50px auto;
+    border-radius:10px;
+    padding:10px 40px 25px;
+    margin-top:40px;
+}
+input[type=text], input[type=password]{
+    width:95%;
+    padding:5px;
+    margin-top:8px;
+    padding-left:5px;
+    font-size:10px;
+}
+input[type=submit]{
+    width:95%;
+    background-color:#007;
+    color:#fff;
+    padding:4px;
+    font-size:20px;
+    cursor:pointer;
+    border-radius:5px;
+}
 body {background-color: powderblue;}
 h1   {color: blue;}
 </style>
 </head>
 <body>
-<h1>User Registration</h1>
+<div class="register">
+<h1 align="center">User Registration</h1>
 <form action="" method="post">
 <label>Username: </label><input type="text" name="user"><br/><br/>
 <label>Password: </label><input type="password" name="pass"><br/><br/>
@@ -52,3 +76,5 @@ h1   {color: blue;}
         mysqli_close($conn);//closing connection
     }
 ?>
+</body>
+</html>

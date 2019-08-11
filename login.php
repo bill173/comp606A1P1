@@ -20,8 +20,8 @@ input[type=text], input[type=password]{
 }
 input[type=submit]{
     width:100%;
-    background-color:#007;
-    color:#fff;
+    background-color:#009;
+    color:red;
     padding:6px;
     font-size:20px;
     cursor:pointer;
