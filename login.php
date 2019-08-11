@@ -51,6 +51,8 @@ if(isset($_POST['submit'])){
 
         $rows = mysqli_num_rows($query);
         if($rows == 1){
+            session_start();
+            $_SESSION['sess_user'] = $user;
             header("Location: welcome.php");//redircting to other page
         }
         else
